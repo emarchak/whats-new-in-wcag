@@ -24,7 +24,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: #EEEDEF;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -303,6 +303,14 @@ html {
 		width: $headerLogoHeight;
 	}
 
+
+	.logo--canadadapt {
+		background-image: url("../../lib/myplanet/canadapt.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
 	.section {
 		color: $ice;
 		text-transform: uppercase;
@@ -315,6 +323,7 @@ html {
 		align-self: center;
 	}
 
+	&.color--radiant,
 	&.color--dark {
 		.section {
 			color: $light-grey;
@@ -336,12 +345,21 @@ html {
 
 	.logo {
 		background-position: center;
-		background-size: contain;
+		background-size: 66%;
 		height: auto;
 		margin: auto;
 		min-height: 200px;
 		min-width: 200px;
-		width: 33%;
+		background-size: 66%;
+		width: 50%;
+
+	}
+
+	.logo--canadadapt {
+		min-height: 128px;
+		min-width: 200px;
+		background-size: 60%;
+		width: 50%;
 	}
 }
 
@@ -567,7 +585,7 @@ html {
 		img {
 			float: none;
 			max-width: none;
-			max-height: 100%;
+			max-height: none;
 			width: 100%;
 		}
 		.profile {
@@ -652,7 +670,16 @@ html {
 		margin: auto;
 		min-height: 200px;
 		min-width: 200px;
-		width: 33%;
+		background-size: 66%;
+		width: 50%;
+
+	}
+
+	.logo--canadadapt {
+		min-height: 128px;
+		min-width: 200px;
+		background-size: 60%;
+		width: 50%;
 	}
 
 	&.color--radiant {
